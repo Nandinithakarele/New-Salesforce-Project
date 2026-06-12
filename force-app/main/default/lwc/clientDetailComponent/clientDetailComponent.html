@@ -1,0 +1,37 @@
+<template>
+    <lightning-layout multiple-rows horizontal-align="center">
+        <lightning-layout-item size="6" class="slds-box">
+            <!---------------/parent to child communication--------------------------------------**///**------/child to parent communication----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+           <c-name-component first-name={firstName} middle-name={middleName} last-name={lastName} onfnamechange={handleFnameChangeEvent} onmnamechange={handleMiddleNameChange} onlnamechange={handleMnameChangeEvent}></c-name-component>
+        </lightning-layout-item>
+    </lightning-layout>
+    <lightning-layout multiple-rows horizontal-align="center" class="slds-m-top_large">
+        <lightning-layout-item size="6" class="slds-box" >
+            <!---------------/parent to child communication----**///**------/child to parent communica------------------------------------>
+            <c-contact-component phone-number={Phone} email={Email} onphonechange={handlePhoneChangeEvent} onemailchange={handleEmailChangeEvent}></c-contact-component>
+        </lightning-layout-item>
+    </lightning-layout>
+    <lightning-layout multiple-rows horizontal-align="center">
+        <lightning-layout-item size="6">
+    <lightning-input-address 
+        address-label="Address"
+        street-label="Street"
+        city-label="City"
+        country-label="Country"
+        province-label="Province"
+        postal-code-label="PostalCode"
+        street="121 Spear St."
+        city="San Francisco"
+        country="US"
+        province="CA"
+        postal-code="94105"
+        required
+        field-level-help="Help Text for inputAddress field" ></lightning-input-address>
+        </lightning-layout-item>
+        
+    </lightning-layout> 
+    
+    <lightning-layout>
+    <lightning-button variant="brand" label="click here" onclick = {handleClick}></lightning-button>     
+    </lightning-layout>
+</template>

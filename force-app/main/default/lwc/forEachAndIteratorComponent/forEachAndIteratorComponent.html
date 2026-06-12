@@ -1,0 +1,24 @@
+<template>
+<template for:each={users} for:item='user' for:index='index'>
+   <div key={user.email}>
+      <p>{index} - {user.name} - {user.email}</p>
+   </div>
+   <div key={user.email}>
+    <li>I am inside paragraph</li>
+   </div>
+</template>
+
+
+    <template iterator:user={users}>
+        <div key={user.value.email}>
+            <div if:true={user.first}>
+                 <hr/>
+            </div>
+            <p>{user.index} - {user.value.name} - {user.value.email} </p>
+            <div if:false={user.last}>
+                <hr/>
+            </div>
+        
+        </div>
+</template>
+</template>

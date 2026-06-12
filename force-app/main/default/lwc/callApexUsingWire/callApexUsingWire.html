@@ -1,0 +1,12 @@
+<template>
+    html
+    <lightning-input  type="text" label="search" placeholder="search here" onchange={handleSearch}></lightning-input>
+    <template for:each={contactRecords.data} for:item='contact'>
+        <li key={contact.Id}>
+            {contact.FirstName} {contact.LastName}
+        </li>
+
+        <!---<lightning-datatable key-field="id" data={contactRecords.data} columns={columns}>--->
+        </lightning-datatable>
+    </template>
+</template>

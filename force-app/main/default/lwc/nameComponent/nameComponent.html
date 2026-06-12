@@ -1,0 +1,13 @@
+<template>
+    <lightning-layout multiple-rows horizontal-align="spread">
+        <lightning-layout-item size="4" class="slds-box">
+            <lightning-input type="text" label="First Name" value={firstName} onchange={handleFirstNameChange}></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item size="4" class="slds-box">
+            <lightning-input type="text" label="Middle Name" value={middleName} onchange={handleMiddleNameChange}></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item size="4" class="slds-box">
+            <lightning-input type="text" label="Last Name" value={lasttName} onchange={handleLastNameChange}></lightning-input>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>

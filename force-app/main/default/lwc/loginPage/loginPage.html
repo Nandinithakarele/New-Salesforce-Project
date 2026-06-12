@@ -1,0 +1,40 @@
+<template >
+    <lightning-layout multiple-rows lwc:if={showLoginPage}>
+        <lightning-layout-item size="4">
+
+        </lightning-layout-item>
+        <lightning-layout-item size="4">
+            <lightning-input label="username" type="text" onchange={handleLoginUsernameChange}></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item size="4">
+            
+        </lightning-layout-item>
+
+        <lightning-layout-item size="4">
+
+        </lightning-layout-item>
+        <lightning-layout-item size="4">
+            <lightning-input label="password" type="password" onchange={handleLoginPasswordChange}></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item size="4">
+            
+        </lightning-layout-item>
+
+        <lightning-layout-item size="4">
+
+        </lightning-layout-item>
+        <lightning-layout-item size="2">
+            <lightning-button label="login" type="button" variant = "brand" onclick = {handleLoginClick}></lightning-button>
+        </lightning-layout-item>
+        <lightning-layout-item size="2">
+            <lightning-button label="register" type="button" variant = "brand" onclick={handleLoginRegisterClick}></lightning-button>
+        </lightning-layout-item>
+        <lightning-layout-item size="4">
+            
+        </lightning-layout-item>
+
+    </lightning-layout>
+    <template lwc:else>
+    <c-register-page onbacktologin={handleBackToLogin}></c-register-page>
+    </template>
+</template>

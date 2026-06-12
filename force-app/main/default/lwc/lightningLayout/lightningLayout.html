@@ -1,0 +1,125 @@
+<template>
+    <!---lightning layout grid-->
+    <lightning-layout multiple-rows>
+        <lightning-layout-item size="6" class="slds-box">
+            size from 6
+        </lightning-layout-item>
+        <lightning-layout-item size="6" class="slds-box" >
+            size from 6
+        </lightning-layout-item>
+        <lightning-layout-item size="6" class="slds-box" padding="around-small">
+            size from 6
+        </lightning-layout-item>
+    </lightning-layout>
+    <!---horizontal alignment by default (horizontal-align='left')-->
+    <lightning-layout multiple-rows>
+        <lightning-layout-item size="2" class="slds-box">
+            default alignment(left)
+        </lightning-layout-item>
+        <lightning-layout-item size="2" class="slds-box" >
+            default alignment(left)
+        </lightning-layout-item>
+        <lightning-layout-item size="2" class="slds-box" padding="around-small">
+            default alignment(left)
+        </lightning-layout-item>
+    </lightning-layout>
+    <!---horizontal alignment center(horizontal-align='center')-->
+    <lightning-layout multiple-rows horizontal-align = 'center'>
+        <lightning-layout-item size="2" class="slds-box">
+            default alignment(center)
+        </lightning-layout-item>
+        <lightning-layout-item size="2" class="slds-box" >
+            default alignment(center)
+        </lightning-layout-item>
+        <lightning-layout-item size="2" class="slds-box" padding="around-small">
+            default alignment(center)
+        </lightning-layout-item>
+        </lightning-layout>
+        <!---horizontal alignment space(horizontal-align='space')in space spaces will be equally distributed with left and right corner-->
+        <lightning-layout multiple-rows horizontal-align = 'space'>
+        <lightning-layout-item size="2" class="slds-box">
+            default alignment(space)
+        </lightning-layout-item>
+        <lightning-layout-item size="2" class="slds-box" >
+            default alignment(space)
+        </lightning-layout-item>
+        <lightning-layout-item size="2" class="slds-box" padding="around-small">
+            default alignment(space)
+        </lightning-layout-item>
+        </lightning-layout>
+        <!---horizontal alignment space(horizontal-align='spread')in spread there will be no space in left and right corner and in middle there will be equal space-->
+        <lightning-layout multiple-rows horizontal-align = 'spread'>
+        <lightning-layout-item size="2" class="slds-box">
+            default alignment(spread)
+        </lightning-layout-item>
+        <lightning-layout-item size="2" class="slds-box" >
+            default alignment(spread)
+        </lightning-layout-item>
+        <lightning-layout-item size="2" class="slds-box" padding="around-small">
+            default alignment(spread)
+        </lightning-layout-item>
+        </lightning-layout>
+        <!---horizontal alignment end(horizontal-align='end')-->
+        <lightning-layout multiple-rows horizontal-align = 'end'>
+        <lightning-layout-item size="2" class="slds-box">
+            default alignment(end)
+        </lightning-layout-item>
+        <lightning-layout-item size="2" class="slds-box" >
+            default alignment(end)
+        </lightning-layout-item>
+        <lightning-layout-item size="2" class="slds-box" padding="around-small">
+            default alignment(end)
+        </lightning-layout-item>
+        </lightning-layout>
+        <!---alignment bumb-->
+    <lightning-layout multiple-rows>
+        <lightning-layout-item size="2" class="slds-box" alignment-bump = 'left'>
+            box1
+        </lightning-layout-item>
+        <lightning-layout-item size="2" class="slds-box" alignment-bump = 'right'>
+            box2
+        </lightning-layout-item>
+        <lightning-layout-item size="2" class="slds-box" >
+            box3
+        </lightning-layout-item>
+        <lightning-layout-item size="2" class="slds-box" alignment-bump = 'right'>
+            box4
+        </lightning-layout-item>
+    </lightning-layout>
+    <!---alignment bumb-->
+    <lightning-layout multiple-rows>
+        <lightning-layout-item size="2" class="slds-box" alignment-bump = 'left'>
+            box1
+        </lightning-layout-item>
+        <lightning-layout-item size="2" class="slds-box" alignment-bump = 'right'>
+            box2
+        </lightning-layout-item>
+        <lightning-layout-item size="2" class="slds-box" alignment-bump = 'left'>
+            box3
+        </lightning-layout-item>
+        <lightning-layout-item size="2" class="slds-box" alignment-bump = 'right'>
+            box4
+        </lightning-layout-item>
+    </lightning-layout>
+    <!---if we are having alignment bumb and horizontal alignment in these case alignment bump will be applicable-->
+    <!--margin padding-->
+    <!---lightning layout grid margin padding concept-->
+    <lightning-layout multiple-rows>
+        <lightning-layout-item size="1" class="slds-box slds-m-left_x-large slds-m-right_xx-large" >
+            size from 1
+        </lightning-layout-item>
+        <lightning-layout-item size="1" class="slds-box" >
+            size from 1
+        </lightning-layout-item>
+        <lightning-layout-item size="2" class="slds-box">
+            size from 2
+        </lightning-layout-item>
+        <lightning-layout-item size="2" class="slds-box" >
+            size from 2
+        </lightning-layout-item>
+        <lightning-layout-item size="2" class="slds-box" >
+            size from 2
+        </lightning-layout-item>
+    </lightning-layout>
+
+</template>

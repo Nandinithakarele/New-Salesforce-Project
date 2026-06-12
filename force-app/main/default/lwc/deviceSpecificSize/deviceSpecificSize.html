@@ -1,0 +1,48 @@
+<template>
+    <!--Device Specific Size-->
+     <lightning-layout multiple-rows>
+        <!---default value of size is small device size-->
+         <lightning-layout-item size="12" class = 'slds-box' small-device-size="12"  large-device-size="6">
+            <img src="https://wallpapers.com/images/hd/salesforce-himkowi65v5zsqyv.jpg"/>
+         </lightning-layout-item>
+         <lightning-layout-item size="12" class = 'slds-box' small-device-size="12"  large-device-size="6">
+            <img src="https://wallpapers.com/images/hd/salesforce-himkowi65v5zsqyv.jpg"/>
+         </lightning-layout-item>
+     </lightning-layout>
+     <lightning-layout>
+        <lightning-layout-item class="slds-box">
+            <!--onclick is used to perform an action when the user clicks on an element-->
+            <lightning-button variant="brand" label="Click me" title="titleName" onclick={handleClick}></lightning-button>
+        </lightning-layout-item>
+        <lightning-layout-item class="slds-box">
+            <lightning-button variant="success" label="Click me" title="titleName" onclick={handleClick}></lightning-button>
+        </lightning-layout-item>
+        <lightning-layout-item class="slds-box">
+            <lightning-button variant="destructive" label="Click me" title="titleName" onclick={handleClick}></lightning-button>
+        </lightning-layout-item>
+        <lightning-layout-item class="slds-box">
+            <!---onchage attribute - onchange runs when the user changes a value and moves out of the input field
+            or “The onchange attribute is an event handler in HTML that triggers when the value of an input element changes and the element loses focus. 
+            When the event is fired, the updated value is passed to the JavaScript function, allowing us to handle or process the changed input.”-->
+            <lightning-input type="text" variant="standard" name="name" label="label" onchange={handleChange} placeholder="type here...">   
+            </lightning-input> 
+            </lightning-layout-item>
+     </lightning-layout>
+
+     <!--Assignment for desktop device specific size 4 per row and for mobile 2 per row-->
+     <lightning-layout multiple-rows>
+        <lightning-layout-item size="12" class = 'slds-box' small-device-size="6"   large-device-size="3">
+            <img src="https://wallpapers.com/images/hd/salesforce-himkowi65v5zsqyv.jpg"/>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" class = 'slds-box' small-device-size="6"   large-device-size="3">
+            <img src="https://wallpapers.com/images/hd/salesforce-himkowi65v5zsqyv.jpg"/>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" class = 'slds-box' small-device-size="6"   large-device-size="3">
+            <img src="https://wallpapers.com/images/hd/salesforce-himkowi65v5zsqyv.jpg"/>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" class = 'slds-box' small-device-size="6"   large-device-size="3">
+            <img src="https://wallpapers.com/images/hd/salesforce-himkowi65v5zsqyv.jpg"/>
+        </lightning-layout-item>
+     </lightning-layout>
+
+</template>

@@ -1,0 +1,7 @@
+<template>
+    <template lwc:if={flag}>
+    Parent LifeCycle Hook
+    </template>
+    <lightning-button label="Click here" variant="brand" onclick={handleClick}></lightning-button>
+    <c-lifecycle-child-hook onchildclick = {handleChildClick}></c-lifecycle-child-hook>
+</template>

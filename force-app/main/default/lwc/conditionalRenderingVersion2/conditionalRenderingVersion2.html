@@ -1,0 +1,40 @@
+<!---
+//covered in class
+<template>
+    <lightning-layout multiple-rows horizontal-align="center">
+        <lightning-layout-item size="4" lwc:if={showFlag}>
+            <img src="https://tse4.mm.bing.net/th/id/OIP.th9PP5ztJug6QUp1lY0-BwHaEK?pid=Api&P=0&h=180" />
+        </lightning-layout-item>
+        <lightning-layout-item size="4" lwc:else>
+            <img src="https://tse1.mm.bing.net/th/id/OIP.3nr616kLQgdh-_H7eaiKIgHaE8?pid=Api&P=0&h=180" />
+        </lightning-layout-item>
+    </lightning-layout>
+    <lightning-layout horizontal-align="center" class="slds-m-top_large">
+        <lightning-button variant = 'brand' label="Click Me" onclick={handleClick}></lightning-button>
+    </lightning-layout>
+</template>
+-->
+
+<template>
+    <lightning-layout multiple-rows horizontal-align="center">
+
+        <template lwc:if={showTom}>
+            <lightning-layout-item size="4">
+                <img src="https://sp.yimg.com/ib/th/id/OIP.6zbeznIuOcUdf-cw-B1aRgHaEo?pid=Api&w=148&h=148&c=7&dpr=2&rs=1" />
+            </lightning-layout-item>
+        </template>
+
+        <template lwc:elseif={showJerry}>
+            <lightning-layout-item size="4">
+                <img src="https://sp.yimg.com/ib/th/id/OIP.nI0yM_o6J2LGaNeyxRJ35AHaEK?pid=Api&w=148&h=148&c=7&dpr=2&rs=1" />
+            </lightning-layout-item>
+        </template>
+
+        <template lwc:else>
+            <lightning-layout-item size="4">
+                <img src="https://sp.yimg.com/ib/th/id/OIP.6zbeznIuOcUdf-cw-B1aRgHaEo?pid=Api&w=148&h=148&c=7&dpr=2&rs=1" />
+            </lightning-layout-item>
+        </template>
+
+    </lightning-layout>
+</template>
